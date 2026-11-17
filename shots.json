@@ -1,1 +1,6 @@
-[{"name":"1-cover.jpg","query":"?shot=cover"},{"name":"2-on-foot.jpg","query":"?shot=foot"},{"name":"3-chase.jpg","query":"?shot=chase"},{"name":"4-start.jpg","query":"?shot=start"}]
+[
+  {"name":"1-cover.jpg","query":"?scene=cover"},
+  {"name":"2-on-foot.jpg","query":"?scene=oldtown"},
+  {"name":"3-chase.jpg","query":"?scene=marina"},
+  {"name":"4-start.jpg","query":"?scene=title"}
+]

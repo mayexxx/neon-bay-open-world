@@ -1,46 +1,5 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neon Bay</title>
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; overflow: hidden; background: #173b40; color: white; font-family: Arial; }
-    canvas { display: block; }
-    button { cursor: pointer; font: inherit; }
-    #mute { position: absolute; right: 25px; bottom: 25px; background: #173b40; color: white; border: 1px solid #fff8; border-radius: 50%; width: 42px; height: 42px; }
-    #overlay { position: absolute; inset: 0; display: flex; align-items: center; padding: 6%; background: linear-gradient(90deg, #102c34f8, #102c34df 40%, transparent); }
-    h1 { font-size: 100px; letter-spacing: -8px; line-height: .75; margin: 25px 0; }
-    h1 span { color: #ffdc6a; }
-    .tag { color: #8ce5d3; letter-spacing: 4px; font-size: 11px; font-weight: bold; }
-    p { line-height: 1.5; color: #d3e8df; max-width: 470px; }
-    button.action { background: #ffdc6a; border: 0; padding: 16px 25px; font-weight: bold; letter-spacing: 1px; margin: 15px 8px 20px 0; }
-    button.alt { background: transparent; border: 1px solid #fff9; color: white; }
-    .detail { font-size: 12px; line-height: 1.8; color: #bdd3cb; }
-    #pause { display: none; position: absolute; inset: 0; background: #102b35c9; place-items: center; text-align: center; font-size: 40px; }
-  </style>
-</head>
-<body>
-  <canvas></canvas>
-  <div id="overlay">
-    <div>
-      <div class="tag">AN ORIGINAL OPEN-WORLD STORY</div>
-      <h1>NEON<br><span>BAY</span></h1>
-      <p>A city of sunshine, secrets, and second chances. Sol Vega has a score to settle on the waterfront. The rest is up to you.</p>
-      <button class="action" id="new">NEW GAME →</button>
-      <button class="action alt" id="continue">CONTINUE</button>
-      <div class="detail">
-        <b>MOVE / DRIVE</b> WASD or arrows &nbsp; <b>ENTER / EXIT</b> E<br>
-        <b>AIM / FIRE</b> mouse &nbsp; <b>PUNCH</b> space &nbsp; <b>LOG</b> L &nbsp; <b>PAUSE</b> Esc &nbsp; <b>MUTE</b> M<br><br>
-        <b>THE SOL VEGA FILES</b><br>
-        01 A favor in the sun / 02 Borrowed wheels / 03 Paper trail<br>
-        04 Heat on the harbor / 05 The handoff / 06 Signal fire
-      </div>
-    </div>
-  </div>
-  <div id="pause"><div><b>PAUSED</b><p>Press ESC to return to Neon Bay</p></div></div>
-  <button id="mute">♪</button>
-  <script type="module" src="src/main.js"></script>
-</body>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Neon Bay</title><link rel="icon" href="data:,"><link rel="stylesheet" href="./style.css"></head>
+<body><canvas id="world"></canvas><div id="overlay"></div><script type="module" src="./main.js"></script></body>
 </html>
